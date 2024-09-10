@@ -20,7 +20,7 @@ user_mesage = ("Following the transcript from a recorded call \n"
 
 os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
-openai_model = ChatOpenAI(model="gpt-3.5-turbo")
+openai_model = ChatOpenAI(model="gpt-4o-mini")
 
 prompt = ChatPromptTemplate.from_messages([
     ("system", "You are a smart audio transcript analyst. Your task is to analyse the transcript of a call conversation between an insurance company support engineer and insurance customer. "),
